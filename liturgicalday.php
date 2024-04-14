@@ -1,4 +1,23 @@
 <?php
+
+ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+         $url = "https://";   
+    else  
+         $url = "http://";   
+    // Append the host(domain name, ip) to the URL.   
+    $url.= $_SERVER['HTTP_HOST'];   
+    
+    // Append the requested resource location to the URL   
+    $url.= $_SERVER['REQUEST_URI'];    
+      
+    echo $url;  
+
+$lang = "ar";
+
+$query = parse_url($url, PHP_URL_QUERY);
+parse_str($query, $queryParams);
+print_r($queryParams);
+
 //Getting current XML from the Greek Archdiocese website
 $liturgicday = "https://onlinechapel.goarch.org/daily.asp";
 $xml = file_get_contents($liturgicday, "r") or die("Failed to load");
