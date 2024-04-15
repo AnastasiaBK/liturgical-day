@@ -12,11 +12,11 @@
       
     echo $url;  
 
-$lang = "ar";
-
 $query = parse_url($url, PHP_URL_QUERY);
 parse_str($query, $queryParams);
 print_r($queryParams);
+
+$lang = "ar";
 
 //Getting current XML from the Greek Archdiocese website
 $liturgicday = "https://onlinechapel.goarch.org/daily.asp";
