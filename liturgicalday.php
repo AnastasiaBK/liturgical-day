@@ -17,6 +17,9 @@ parse_str($query, $queryParams);
 print_r($queryParams);
 
 $lang = "ar";
+if ($query<>null) && ($query<>"")
+	$lang = $queryParams["lang"];
+echo $lang;
 
 //Getting current XML from the Greek Archdiocese website
 $liturgicday = "https://onlinechapel.goarch.org/daily.asp";
