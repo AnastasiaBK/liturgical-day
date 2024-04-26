@@ -90,6 +90,6 @@ foreach($oc_xml->readings->reading as $rds) {
 	echo '<tr><td width=60%>'.$curbody_en.'</td>';
 	echo '<td width=40% align="right"><div style="direction:rtl; font-size:110%;" lang="ar">'.$curbody_ar.'</div></td></tr>';
 }
-echo '<tr><td colspan=2><p class="has-small-font-size">© Greek Orthodox Archdiocese of America <a href="https://www.goarch.org/chapel" target="_blank" rel="noopener noreferrer">www.goarch.org/chapel</a></p></td></tr>';
+echo '<tr><td colspan=2><p class="has-small-font-size">The readings and listing of saints for the day are calculated by and made available through the Online Chapel of the Greek Orthodox Archdiocese of America (<a href="https://www.goarch.org/chapel" target="_blank" rel="noopener noreferrer">www.goarch.org/chapel</a>). The scripture readings in English are from the Revised Standard Version of the Bible, copyright © 1946, 1952, and 1971 National Council of the Churches of Christ in the United States of America. Used by permission. All rights reserved worldwide.</p></td></tr>';
 echo '</table>';
 ?>
